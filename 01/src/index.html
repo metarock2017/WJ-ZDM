@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>射击</title>
+	<meta charset="utf-8">
+</head>
+<link rel="stylesheet/less" type="text/css" href="./css/main.less" />
+<script src="./js/jquery.js"></script>
+<script src="./js/jcanvas.js"></script>
+<script src="./js/less.js"></script>
+<script src="./js/vue.js"></script>
+<body>
+	<div id="control">
+		<div class="change s1">记分板：{{countBord * 10}}</div>
+		<div class="change s1">敌方血量：{{blood}}
+			<div class="c-sel1" @click="upSth('blood')">增加</div>
+			<div class="c-sel2" @click="lowSth('blood')">减少</div>
+		</div>
+		<div class="change s2">敌方速度：{{enemySpeed}}
+			<div class="c-sel1" @click="upSth('enemySpeed')">增加</div>
+			<div class="c-sel2" @click="lowSth('enemySpeed')">减少</div>
+		</div>
+		<div class="change s3">敌人频率：{{enemyPl}}
+			<div class="c-sel1" @click="upSth('enemyPl')">增加</div>
+			<div class="c-sel2" @click="lowSth('enemyPl')">减少</div>
+		</div>
+		<div class="change s4">子弹速度：{{zidanSpeed}}
+			<div class="c-sel1" @click="upSth('zidanSpeed')">增加</div>
+			<div class="c-sel2" @click="lowSth('zidanSpeed')">减少</div>
+		</div>
+		<div class="change s5">子弹频率：{{zidanPl}}
+			<div class="c-sel1" @click="upSth('zidanPl')">增加</div>
+			<div class="c-sel2" @click="lowSth('zidanPl')">减少</div>
+		</div>
+		<div class="change s6">子弹威力：{{zidanWl}}
+			<div class="c-sel1" @click="upSth('zidanWl')">增加</div>
+			<div class="c-sel2" @click="lowSth('zidanWl')">减少</div>
+		</div>
+	</div>
+	<canvas id="in" width="1500" height="1200">xx</canvas>
+	<script src="./js/main.js"></script>
+</body>
+</html>

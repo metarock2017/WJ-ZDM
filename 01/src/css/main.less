@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #f3f3f3;
+}
+
+
+
+#in {
+	display: block;
+	width: 100%;
+	background: #f4f4f4;
+	cursor: none;
+	height: 100%;
+	outline: 1px solid black;
+}
+#control {
+	height: 400px;
+	width: 300px;
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+
+	.change {
+		background: rgba(255, 255, 255, 0.5);
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		font-size: 30px;
+		line-height: 50px;
+
+		.c-sel1, .c-sel2 {
+			height: 100%;
+			flex: 1;
+			cursor: pointer;font-size: 20px;
+			text-align: center;
+		}
+	}
+}

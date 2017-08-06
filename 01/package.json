@@ -1,0 +1,22 @@
+{
+  "name": "mygame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderMing/firstgame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderMing/firstgame/issues"
+  },
+  "homepage": "https://github.com/CoderMing/firstgame#readme",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
