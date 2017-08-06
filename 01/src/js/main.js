@@ -98,7 +98,7 @@ setInterval(function() {
 
 		// 敌人
 		enemy.forEach(function(a, b, c) {
-			a.y += app.enemySpeed * 5;
+			a.y += app.enemySpeed * 2;
 			if (a.y > canHeight + 100) {
 				playFailed();
 			}
@@ -147,7 +147,7 @@ var app = new Vue({
 		},
 		lowSth: function(a) {
 			if (app[a] <= 1) {
-				return alert('不能为负值！')
+				return alert('不能小于1！')
 			}
 			app[a]--;
 		}
