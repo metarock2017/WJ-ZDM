@@ -45,7 +45,7 @@ Ajax({
 
 // Ajax下挂载get，post的方法
 Ajax.get = function(url) {
-	return Ajax.call(null, {
+	return Ajax({
 		method: 'get',
 		url,
 		data: {}
@@ -55,7 +55,7 @@ Ajax.get = function(url) {
 Ajax.get('https://zs.cqupt.edu.cn/wcx_collegelist.ashx').then(console.log);
 
 Ajax.post = function(url, data) {
-	return Ajax.call(null, {
+	return Ajax({
 		method: 'post',
 		url,
 		data
