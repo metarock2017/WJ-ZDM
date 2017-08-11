@@ -34,7 +34,7 @@ function Ajax(obj = {}) {
 
 Ajax({
   method: 'get',
-  url: 'https://zs.cqupt.edu.cn/wcx_collegelist.ashx',
+  url: 'xx',
   data: {
   	a: 1,
   	b: 2
@@ -52,7 +52,7 @@ Ajax.get = function(url) {
 	})
 }
 
-Ajax.get('https://zs.cqupt.edu.cn/wcx_collegelist.ashx').then(console.log);
+Ajax.get('xx').then(console.log);
 
 Ajax.post = function(url, data) {
 	return Ajax({
@@ -62,6 +62,6 @@ Ajax.post = function(url, data) {
 	})
 }
 
-Ajax.post('http://hongyan.cqupt.edu.cn/redapi2/api/kebiao', {
+Ajax.post('xx', {
 	stuNum: '04121603',
 }).then(console.log)
