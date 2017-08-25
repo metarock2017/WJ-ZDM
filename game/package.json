@@ -1,7 +1,7 @@
 {
-  "name": "06",
+  "name": "game",
   "version": "1.0.0",
-  "description": "",
+  "description": "games",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.3",
-    "express": "^4.15.4",
-    "mysql": "^2.14.1",
-    "socket.io": "^2.0.3"
-  }
+    "opn": "^5.1.0",
+    "ws": "^3.1.0"
+  },
+  "devDependencies": {}
 }
